@@ -89,14 +89,6 @@ class Post extends React.Component {
             <p className="comment">
               <span>{this.props.name}:</span>&nbsp;{this.props.punchline}
             </p>
-            <button className="button__style">View all 30 comments</button>
-            <p className="comment">
-              <span>{this.props.cname}:</span>&nbsp;{this.props.cpline}
-              <i>
-                <FaRegHeart />
-              </i>
-            </p>
-            <span className="span__style">3 HOURS AGO</span>
           </div>
           <div className="add__comment">
             <input

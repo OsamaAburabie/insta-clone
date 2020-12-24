@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const instance = axios.create({
-  baseURL: "http://localhost:8000/api/tasks",
+  baseURL: "https://insta-cbackend.herokuapp.com/api/tasks",
 });
 
 export default instance;

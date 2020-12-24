@@ -33,15 +33,12 @@ import Pusher from "pusher-js";
 function Home() {
   async function fetchData() {
     await axios
-      .get("http://localhost:8000/api/tasks")
+      .get("https://insta-cbackend.herokuapp.com/api/tasks")
       .then((req) => setPost(req.data));
   }
   const [post, setPost] = useState([]);
   useEffect(() => {
     fetchData();
-  }, []);
-  console.log(post);
-  useEffect(() => {
     const pusher = new Pusher("3f1c53e7604a0a23b911", {
       cluster: "eu",
     });
@@ -51,6 +48,8 @@ function Home() {
       fetchData();
     });
   }, []);
+  console.log(post);
+
   return (
     <div>
       <DataInput />
