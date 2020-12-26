@@ -11,7 +11,7 @@ function DataInput() {
     const newName = "Group 2";
     const newPostImg =
       "https://cdn-www.bluestacks.com/bs-images/89cfc0bdd6e77f409b33c59d5289b155.png";
-    if (newItem !== "") {
+    if (inputPost && inputImg !== "") {
       let newJSON = await {
         punshline: newItem,
         imgPost: newImg,
