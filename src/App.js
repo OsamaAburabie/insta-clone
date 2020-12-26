@@ -33,7 +33,7 @@ import Pusher from "pusher-js";
 function Home() {
   async function fetchData() {
     await axios
-      .get("https://insta-cbackend.herokuapp.com/api/tasks")
+      .get("http://localhost:8000/api/tasks")
       .then((req) => setPost(req.data));
   }
   const [post, setPost] = useState([]);

@@ -18,9 +18,7 @@ function DataInput() {
         name: newName,
         img: newPostImg,
       };
-      axios
-        .post("https://insta-cbackend.herokuapp.com/api/tasks", newJSON)
-        .then(() => {});
+      axios.post("http://localhost:8000/api/tasks", newJSON).then(() => {});
       setInputImg("");
       setInputPost("");
     }
